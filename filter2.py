@@ -46,7 +46,7 @@ def detect_face():
                 overlay_resized = cv2.resize(overlay_image, (new_width, new_height))
 
                 # Calculate the position to place the overlay image in the center of the face region
-                x_offset = x + (w - new_width) // 2
+                x_offset = x + (w - new_width) // 2 
                 y_offset = y + (h - new_height) // 2
 
                 # Overlay the resized image on the screenshot using the mask
